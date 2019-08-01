@@ -17,6 +17,7 @@ class CreateAnswersTable extends Migration
             $table->bigIncrements('id');
             $table->integer('quiz_id');
             $table->string('answer');
+            $table->string('is_correct');
             $table->timestamps();
         });
     }
